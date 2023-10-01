@@ -19,7 +19,7 @@
    function CallToPythonExample()
     {
         // Register to app state updates from Python and Javascript. You can pass a custom event name and a list of namespaces to subscribe to.
-        Pytonium.appState.registerForStateUpdates("ChangeDate", ["app-general"]);
+        Pytonium.appState.registerForStateUpdates("ChangeDate", ["app-general"], true, true);
 
         // Add a listener for the custom event and retrieve information.
         document.addEventListener('ChangeDate', function(event) {

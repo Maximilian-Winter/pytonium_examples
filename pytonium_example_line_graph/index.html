@@ -21,7 +21,7 @@
     }
 
     function Init() {
-        Pytonium.appState.registerForStateUpdates("ChangeData", ["app-general"]);
+        Pytonium.appState.registerForStateUpdates("ChangeData", ["app-general"], true, true);
 
         document.addEventListener('ChangeData', function (event) {
             let detail = event.detail;
